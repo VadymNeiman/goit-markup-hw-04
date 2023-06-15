@@ -142,8 +142,9 @@
    padding-bottom: 200px;
    text-align: center;
    background-color: var(--hero-background-color,silver);
-   background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                     url(../images/herofoto.jpg); 
+   background-image: linear-gradient( rgba(47, 48, 58, 0.4),
+                                      rgba(47, 48, 58, 0.4)),
+                                      url(../images/herofoto.jpg); 
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -209,6 +210,17 @@
 .list-advant {
    display: flex;
    gap: 30px;
+}
+
+.advant-item::before {
+content: '';
+display: block;
+height: 120px;
+/* background-color: blue; */
+/* background-image: url(../images/cat-logo.svg); */
+background-repeat: no-repeat;
+background-position: center;
+background-size: 70px;
 }
 
 /* == Секція DOING == */
