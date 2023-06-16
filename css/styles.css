@@ -11,6 +11,7 @@
     --hero-background-color: #C4C4C4;
     --secondary-background-color: #F5F4FA;
     --hero-btn-background-focus-color: #188CE8;
+    --link-icon-color: #AFB1B8;
  }
  
  body { 
@@ -83,6 +84,29 @@
 .logo-accent {
    color: var(--accent-color, #2196F3);
 }
+
+.social-link-items{
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+}
+.social-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   fill: var(--link-icon-color);
+
+   /* background-color: lightgreen; */
+}
+.social-link:hover,
+.social-link:focus {
+   background-color: var(--accent-color);
+   fill: var(--light-text-color);
+}
+
 /* ===== /COMPONENT ===== */
 
  /* ===== HEADER ===== */
@@ -125,10 +149,9 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--second-text-color,grey);
-    /* display: block;
-    padding-top: 32px;
-    padding-bottom: 32px; */
+ 
  }
+ 
  /* ===== /HEADER ===== */
 
                /*===== MAIN-SUDIO ===== */
@@ -143,7 +166,8 @@
    text-align: center;
    background-color: var(--hero-background-color,silver);
    background-image: linear-gradient( rgba(47, 48, 58, 0.4),
-                                      rgba(47, 48, 58, 0.4)),
+                                      rgba(47, 48, 58, 0.4)
+                                    ),
                                       url(../images/herofoto.jpg); 
    background-repeat: no-repeat;
    background-position: center;
@@ -217,7 +241,7 @@ content: '';
 display: block;
 height: 120px;
 /* background-color: blue; */
-/* background-image: url(../images/cat-logo.svg); */
+/* background-image: url(../images/antenna.svg); */
 background-repeat: no-repeat;
 background-position: center;
 background-size: 70px;
@@ -275,6 +299,7 @@ background-size: 70px;
    line-height: 1.19;
    text-align: center;
    color: var(--second-text-color,grey);
+   margin-bottom: 16px;
 }
            /* ===== /MAIN-STUDIO ===== */
 
