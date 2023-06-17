@@ -12,6 +12,7 @@
     --secondary-background-color: #F5F4FA;
     --hero-btn-background-focus-color: #188CE8;
     --link-icon-color: #AFB1B8;
+    /* --link-icon-color: red; */
  }
  
  body { 
@@ -99,12 +100,12 @@
    border-radius: 50%;
    fill: var(--link-icon-color);
 
-   /* background-color: lightgreen; */
 }
 .social-link:hover,
 .social-link:focus {
-   background-color: var(--accent-color);
-   fill: var(--light-text-color);
+   background-color: var(--accent-color,blue);
+   fill: var(--light-text-color,white);
+
 }
 
 /* ===== /COMPONENT ===== */
@@ -236,16 +237,26 @@
    gap: 30px;
 }
 
-.advant-item::before {
-content: '';
-display: block;
-height: 120px;
+.advant-item-icon {
+   /* width: 270px; */
+   height: 120px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--secondary-background-color,lightgrey);
+   
+}
+/* .advant-item::before { */
+/* content: ''; */
+/* display: block; */
+/* width: 270px; */
+/* height: 120px; */
 /* background-color: blue; */
 /* background-image: url(../images/antenna.svg); */
-background-repeat: no-repeat;
-background-position: center;
-background-size: 70px;
-}
+/* background-repeat: no-repeat; */
+/* background-position: center; */
+/* background-size: 70px; */
+/* } */
 
 /* == Секція DOING == */
 .doing-items {
