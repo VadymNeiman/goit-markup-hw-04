@@ -12,8 +12,7 @@
     --secondary-background-color: #F5F4FA;
     --hero-btn-background-focus-color: #188CE8;
     --link-icon-color: #AFB1B8;
-    /* --link-icon-color: red; */
- }
+}
  
  body { 
     font-family: roboto, sans-serif;
@@ -144,15 +143,27 @@
  .current {
     color: var(--accent-color, #2196F3);
  } 
- 
+ /* .menu-list-item {
+   display: flex;
+   align-items: center;
+ } */
+
  .link-contact {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   height: 16px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--second-text-color,grey);
- 
+    fill: var(--second-text-color,grey);
  }
- 
+ .link-contact:hover,
+ .link-contact:focus {
+   fill: currentColor;
+ }
+
  /* ===== /HEADER ===== */
 
                /*===== MAIN-SUDIO ===== */
