@@ -97,7 +97,7 @@
    width: 44px;
    height: 44px;
    border-radius: 50%;
-   fill: var(--link-icon-color);
+   fill: var(--link-icon-color,silver);
     
 }
 .social-link:hover,
@@ -158,7 +158,9 @@
     letter-spacing: 0.02em;
     color: var(--second-text-color,grey);
     fill: var(--second-text-color,grey);
- }
+ 
+   }
+
  .link-contact:hover,
  .link-contact:focus {
    fill: currentColor;
@@ -322,6 +324,27 @@
    text-align: center;
    color: var(--second-text-color,grey);
    margin-bottom: 16px;
+}
+/* == Секція CLIENT == */
+.client-items {
+   display: flex;
+   gap: 30px;
+}
+.client-item {
+   display: flex;
+   width: 170px;
+   height: 92px;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;
+   fill: var(--link-icon-color,silver);
+}
+
+.client-item:hover,
+.client-item:focus {
+   fill: var(--accent-color,blue);
+   border-color: var(--accent-color,blue);
 }
            /* ===== /MAIN-STUDIO ===== */
 
