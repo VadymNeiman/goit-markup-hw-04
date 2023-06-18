@@ -98,7 +98,7 @@
    height: 44px;
    border-radius: 50%;
    fill: var(--link-icon-color);
-
+    
 }
 .social-link:hover,
 .social-link:focus {
@@ -332,6 +332,18 @@
    background-color: var(--page-background-color, black); 
 }
 
+.footer-container {
+   display: flex;
+}
+.footer-contacts {
+   width: 230px;
+   margin-right: 70px;
+}
+.footer-social {
+   padding-top: 12px;
+
+}
+
 .logo-footer {
    display: block;
    font-family: 'Raleway';
@@ -358,6 +370,24 @@
 .footer-address-item:not(:last-child) {
    margin-bottom: 9px;
 }
+
+.footer-social-title {
+   font-weight: 700;
+   line-height: 1.15;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--light-text-color,white);
+   margin-bottom: 20px;
+}
+
+.footer .social-link  {
+   fill: white;
+   background-color: rgba(255, 255, 255, 0.1);
+}
+.footer .social-link:hover,
+.footer .social-link:focus {
+   background-color: var(--accent-color,blue);
+} 
 
 /* ===== /FOOTER ===== */
 
