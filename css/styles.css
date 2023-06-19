@@ -257,19 +257,8 @@
    align-items: center;
    justify-content: center;
    background-color: var(--secondary-background-color,lightgrey);
-   
+   margin-bottom: 30px;
 }
-/* .advant-item::before { */
-/* content: ''; */
-/* display: block; */
-/* width: 270px; */
-/* height: 120px; */
-/* background-color: blue; */
-/* background-image: url(../images/antenna.svg); */
-/* background-repeat: no-repeat; */
-/* background-position: center; */
-/* background-size: 70px; */
-/* } */
 
 /* == Секція DOING == */
 .doing-items {
@@ -357,14 +346,11 @@
 
 .footer-container {
    display: flex;
+   align-items: baseline;
 }
 .footer-contacts {
    width: 230px;
    margin-right: 70px;
-}
-.footer-social {
-   padding-top: 12px;
-
 }
 
 .logo-footer {
@@ -439,7 +425,7 @@
    color: var(--light-text-color, white);
    background: var(--accent-color, #2196F3);
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-   border-radius: 4px;   
+
 }
 
 .gallery {
@@ -451,21 +437,13 @@
 
 .gallery li {
    flex-basis: calc((100% - 2 * 30px) / 3);
-   /* display: flex; */
+   display: flex;
 }
-.gallery li:hover,
-.gallery li:focus {
-   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-   /* background-color: yellowgreen; */
-}
-/* .filter-card {
-   background-color: silver;
-} */
-/* .filter-card:hover,
+
+.filter-card:hover,
 .filter-card:focus {
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-   background-color: yellowgreen;
-} */
+ }
 
 .filter-description {
    padding: 20px 24px;
